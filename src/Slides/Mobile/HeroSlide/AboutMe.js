@@ -1,20 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import device from '../../../Assets/Responsive/breakpoints';
+import React, { Component } from "react";
+import styled from "styled-components";
+import device from "../../../Assets/Responsive/breakpoints";
 
 const Container = styled.section`
-    height: 50vh;/* Since pageSplitTime is 1.4 */
-    width:100%;
-    /* border: 1px solid blue; */
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+  height: 50vh; /* Since pageSplitTime is 1.4 */
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
 `;
 
 const AboutMeDescription = styled.span`
-  font-family: 'AvenirRoman';
+  font-family: "AvenirRoman";
   font-size: 24px;
   text-align: center;
   @media ${device.mobileS} {
@@ -44,8 +44,8 @@ class AboutMe extends Component {
     return (
       <Container>
         <AboutMeDescription>
-          Crafting user friendly and aesthetic UI designs
-          is not just my profession, it's my passion.
+          Crafting user friendly and aesthetic UI designs is not just my
+          profession, it's my passion.
         </AboutMeDescription>
       </Container>
     );
