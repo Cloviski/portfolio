@@ -29,13 +29,13 @@
     "parcel-bundler": "^1.10.3"
   },
   "dependencies": {
-    "dotenv": "^16.3.1",
-    "prop-types": "^15.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-responsive": "^9.0.2",
-    "styled-components": "^6.1.8",
-    "ua-parser-js": "^1.0.37",
+    "dotenv": "^6.1.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.0",
+    "react-responsive": "^6.0.1",
+    "styled-components": "^4.0.3",
+    "ua-parser-js": "^0.7.19",
     "vh-check": "^2.0.5"
   }
 }
