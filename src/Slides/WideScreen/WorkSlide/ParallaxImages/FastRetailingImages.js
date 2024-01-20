@@ -5,6 +5,7 @@ import fastRetailingUQImg from "../../../../Assets/Images/FastRetailing/UQ.png";
 import fastRetailingGUImg from "../../../../Assets/Images/FastRetailing/GU.png";
 import fastRetailingPLSTImg from "../../../../Assets/Images/FastRetailing/PLST.png";
 import fastRetailingGU2Img from "../../../../Assets/Images/FastRetailing/GU2.png";
+import SpaceArtSAHImg from "../../../../Assets/Images/SpaceArt/SAH.png";
 
 const FastRetailingPhoneUQ = styled.img.attrs({
   style: ({ scroll }) => ({
@@ -87,7 +88,7 @@ class FastRetailingImages extends Component {
           alt="fastRetailingUQ"
         />
         <FastRetailingPhoneGU
-          src={fastRetailingGUImg}
+          src={SpaceArtSAHImg}
           scroll={scrollPercent}
           alt="fastRetailingGU"
         />

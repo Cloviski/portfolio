@@ -79,6 +79,36 @@ class ImageContent extends Component {
             scrollHeight={scrollHeight}
           />
         </ImageBox>
+        <ImageBox>
+          <EyepImages
+            boxHeight={boxHeight}
+            index={3}
+            scrollPercent={scrollPercent}
+            screenHeight={screenHeight}
+            scrollHeight={scrollHeight}
+          />
+        </ImageBox>
+      </ImageContainer>
+    );
+  }
+}
+
+ImageContent.propTypes = {
+  pageSplitTimes: PropTypes.number.isRequired,
+};
+
+export default ImageContent;
+
+/*
+       <ImageBox height={boxHeight}>
+          <FastRetailingImages
+            boxHeight={boxHeight}
+            index={1}
+            scrollPercent={scrollPercent}
+            screenHeight={screenHeight}
+            scrollHeight={scrollHeight}
+          />
+        </ImageBox>
         <ImageBox height={boxHeight}>
           <LashicImages
             boxHeight={boxHeight}
@@ -124,13 +154,4 @@ class ImageContent extends Component {
             scrollHeight={scrollHeight}
           />
         </ImageBox>
-      </ImageContainer>
-    );
-  }
-}
-
-ImageContent.propTypes = {
-  pageSplitTimes: PropTypes.number.isRequired,
-};
-
-export default ImageContent;
+*/

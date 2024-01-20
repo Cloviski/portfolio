@@ -110,12 +110,12 @@ class Skills extends Component {
             <br />
             TypeScript
             <br />
-            HTML & CSS
+            NodeJS
             <br />
           </div>
           <div>
             <br />
-            NodeJS
+            HTML & CSS
             <br />
             npm
             <br />

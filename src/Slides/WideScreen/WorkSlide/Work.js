@@ -30,21 +30,21 @@ class Work extends Component {
       },
       {
         number: "01",
-        projectName: "FR Design system",
+        projectName: "SPACE ART",
         projectDesc:
-          "Multi brand e-commerce design system for websites and native mobile applications.",
-        projectType: "DESIGN SYSTEM",
-        roles: ["Design system lead", "Technical PDM"],
+          "Platform designed to revolutionize the way artists and companies connect.",
+        projectType: "React • TypeScript • styled-components",
+        roles: ["Frontend Lead Developer"],
       },
       {
         number: "02",
-        projectName: "LASHIC",
+        projectName: "YouTube Replica",
         projectDesc:
-          "Mobile app and websites for senior citizen facility's caregivers, service managers and admins.",
-        projectType: "APP SUITE",
-        roles: ["Design lead"],
+          "A fully 1:1 replicated design of Youtube featuring functionalities such as video upload, search capabilities, and additional features.",
+        projectType: "React • TypeScript • Node.js • styled-components",
+        roles: ["FullStack Developer"],
       },
-      {
+      /*{
         number: "03",
         projectName: "Eyep",
         projectDesc:
@@ -74,7 +74,7 @@ class Work extends Component {
           "Web app project to give workplace insights using indoor localization, voice and schedule.",
         projectType: "iOS APP",
         roles: ["UI Designer", "Full Stack Developer"],
-      },
+      },*/
       {
         number: "",
         projectName: "",
