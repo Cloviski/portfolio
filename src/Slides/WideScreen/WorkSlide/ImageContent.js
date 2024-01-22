@@ -12,7 +12,7 @@ const ImageContainer = styled.div`
   /** border: 10px dashed black; */
   margin-left: 50%;
   width: 50%;
-  height: 375vh; //925vh, ideal is 375vh // 710vh
+  height: 375vh; //925vh
   display: flex;
   flex-flow: column nowrap;
 `;
@@ -67,7 +67,7 @@ class ImageContent extends Component {
   render() {
     const { scrollPercent, scrollHeight, screenHeight } = this.state;
     const { pageSplitTimes } = this.props;
-    const boxHeight = pageSplitTimes * 100;
+    const boxHeight = pageSplitTimes * 140; //100
     return (
       <ImageContainer>
         <ImageBox height={boxHeight}>
@@ -82,7 +82,7 @@ class ImageContent extends Component {
         <ImageBox>
           <EyepImages
             boxHeight={boxHeight}
-            index={3}
+            index={2}
             scrollPercent={scrollPercent}
             screenHeight={screenHeight}
             scrollHeight={scrollHeight}

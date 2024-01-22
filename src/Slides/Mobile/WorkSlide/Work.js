@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import vhCheck from 'vh-check';
-import TextContent from './TextContent';
-import ImageContent from './ImageContent';
+import React, { Component } from "react";
+import styled from "styled-components";
+import vhCheck from "vh-check";
+import TextContent from "./TextContent";
+import ImageContent from "./ImageContent";
 
 const Container = styled.div`
-    display: flex;
-    flex-flow: row nowrap;
-    /* border: 1px dashed red; */
+  display: flex;
+  flex-flow: row nowrap;
+  /* border: 1px dashed red; */
 `;
 
 class Work extends Component {
@@ -23,78 +23,82 @@ class Work extends Component {
     this.handleScroll = this.handleScroll.bind(this);
     this.workDetails = [
       {
-        number: '',
-        projectName: '',
-        projectDesc: '',
-        projectType: '',
-        roles: [''],
+        number: "",
+        projectName: "",
+        projectDesc: "",
+        projectType: "",
+        roles: [""],
       },
       {
-        number: '01',
-        projectName: 'FR Design system',
-        projectDesc: 'Multi brand e-commerce design system for websites and native mobile applications.',
-        projectType: 'DESIGN SYSTEM',
-        roles: ['Design system lead', 'Technical PDM'],
+        number: "01",
+        projectName: "SPACE ART",
+        projectDesc:
+          "Platform designed to revolutionize the way artists and companies connect.",
+        projectType: "React • TypeScript • styled-components",
+        roles: ["Frontend Lead Developer"],
       },
       {
-        number: '02',
-        projectName: 'LASHIC',
-        projectDesc: "Mobile app and websites for senior citizen facility's caregivers, service managers and admins.",
-        projectType: 'APP SUITE',
-        roles: ['Design lead'],
+        number: "02",
+        projectName: "YouTube Replica",
+        projectDesc:
+          "A fully 1:1 replicated design of Youtube featuring functionalities such as video upload, search capabilities, and additional features.",
+        projectType: "React • TypeScript • Node.js • styled-components",
+        roles: ["FullStack Developer"],
+      },
+      /*{
+        number: "03",
+        projectName: "Eyep",
+        projectDesc:
+          "Single purpose website to show your IP address and location.",
+        projectType: "WEB APP",
+        roles: ["UI Designer", "Front-end Developer"],
       },
       {
-        number: '03',
-        projectName: 'Eyep',
-        projectDesc: 'Single purpose website to show your IP address and location.',
-        projectType: 'WEB APP',
-        roles: ['UI Designer', 'Front-end Developer'],
+        number: "04",
+        projectName: "Tesla app",
+        projectDesc: "iOS app concept to control Tesla cars remotely.",
+        projectType: "iOS APP CONCEPT",
+        roles: ["UI Designer"],
       },
       {
-        number: '04',
-        projectName: 'Tesla app',
-        projectDesc: 'iOS app concept to control Tesla cars remotely.',
-        projectType: 'iOS APP CONCEPT',
-        roles: ['UI Designer'],
+        number: "05",
+        projectName: "WhatsMyFood",
+        projectDesc:
+          "iOS app to remember your fav food at each restaurant you eat.",
+        projectType: "iOS APP",
+        roles: ["UI Designer", "Front-end Developer"],
       },
       {
-        number: '05',
-        projectName: 'WhatsMyFood',
-        projectDesc: 'iOS app to remember your fav food at each restaurant you eat.',
-        projectType: 'iOS APP',
-        roles: ['UI Designer', 'Front-end Developer'],
-      },
+        number: "06",
+        projectName: "Voistrap",
+        projectDesc:
+          "Web app project to give workplace insights using indoor localization, voice and schedule.",
+        projectType: "iOS APP",
+        roles: ["UI Designer", "Full Stack Developer"],
+      },*/
       {
-        number: '06',
-        projectName: 'Voistrap',
-        projectDesc: 'Web app project to give workplace insights using indoor localization, voice and schedule.',
-        projectType: 'iOS APP',
-        roles: ['UI Designer', 'Full Stack Developer'],
-      },
-      {
-        number: '',
-        projectName: '',
-        projectDesc: '',
-        projectType: '',
-        roles: [''],
+        number: "",
+        projectName: "",
+        projectDesc: "",
+        projectType: "",
+        roles: [""],
       },
     ];
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
+    window.addEventListener("scroll", this.handleScroll);
     const vhDiff = vhCheck().offset;
-    this.setState(
-      {
-        vh: Math.round(
-          (window.document.documentElement.clientHeight + vhDiff) * this.pageSplitTimes,
-        ),
-      },
-    );
+    this.setState({
+      vh: Math.round(
+        (window.document.documentElement.clientHeight + vhDiff) *
+          this.pageSplitTimes
+      ),
+    });
   }
 
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   handleScroll(event) {
@@ -109,11 +113,15 @@ class Work extends Component {
     this.lastScrollTop = scrollDistance;
     // console.log(scrollDistance);
 
-    if (Math.floor(scrollDistance / vh) !== slideNumber
-      && slideNumber < this.workDetails.length - 1) {
+    if (
+      Math.floor(scrollDistance / vh) !== slideNumber &&
+      slideNumber < this.workDetails.length - 1
+    ) {
       this.setState({ slideNumber: Math.floor(scrollDistance / vh) });
-    } else if (slideNumber === this.workDetails.length - 1
-      && (Math.floor(scrollDistance / vh) < slideNumber)) {
+    } else if (
+      slideNumber === this.workDetails.length - 1 &&
+      Math.floor(scrollDistance / vh) < slideNumber
+    ) {
       this.setState({ slideNumber: Math.floor(scrollDistance / vh) });
     }
   }

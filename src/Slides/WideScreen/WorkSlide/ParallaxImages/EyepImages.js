@@ -3,6 +3,8 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 import eyepTabletImg from "../../../../Assets/Images/Eyep/Tablet.png";
 import eyepIphoneImg from "../../../../Assets/Images/Eyep/Iphone.png";
+import youtubeIpadImg from "../../../../Assets/Images/YoutubeReplica/YTH.png";
+import youtubeIphoneImg from "../../../../Assets/Images/YoutubeReplica/YTP.png";
 
 const Iphone = styled.img.attrs({
   style: ({ scroll }) => ({
@@ -43,8 +45,8 @@ class EyepImages extends Component {
 
     return (
       <React.Fragment>
-        <Tablet src={eyepTabletImg} scroll={scrollPercent} alt="eyepTablet" />
-        <Iphone src={eyepIphoneImg} scroll={scrollPercent} alt="eyepIphone" />
+        <Tablet src={youtubeIpadImg} scroll={scrollPercent} alt="eyepTablet" />
+        <Iphone src={youtubeIphoneImg} scroll={scrollPercent} alt="eyepIphone" />
       </React.Fragment>
     );
   }

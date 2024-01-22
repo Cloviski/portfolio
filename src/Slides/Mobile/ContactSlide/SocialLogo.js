@@ -1,10 +1,10 @@
-import React from 'react';
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
-import device from '../../../Assets/Responsive/breakpoints';
+import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
+import device from "../../../Assets/Responsive/breakpoints";
 
 const LogoImage = styled.img`
-/* border: 1px solid black; */
+  /* border: 1px solid black; */
   @media ${device.mobileS} {
     height: 65px;
     width: 65px;
@@ -30,7 +30,6 @@ class SocialLogo extends React.Component {
       <a href={redirectURL} target="_blank" rel="noopener noreferrer">
         <LogoImage src={imgURL} alt={alternate} />
       </a>
-
     );
   }
 }

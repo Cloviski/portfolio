@@ -1,10 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import twitterImg from "../../../Assets/Images/Social/twitter.svg";
 import githubImg from "../../../Assets/Images/Social/git.svg";
 import mailImg from "../../../Assets/Images/Social/mail.svg";
-import instaImg from "../../../Assets/Images/Social/insta.svg";
-import dribbbleImg from "../../../Assets/Images/Social/dribbble.svg";
 import linkedInImg from "../../../Assets/Images/Social/linkedin.svg";
 import SocialLogo from "./SocialLogo";
 import device from "../../../Assets/Responsive/breakpoints";
@@ -93,27 +90,17 @@ class Contact extends Component {
           <SocialLogo
             imgURL={githubImg}
             alternate="github"
-            redirectURL="https://github.com/sureshmurali"
+            redirectURL="https://github.com/Cloviski"
           />
           <SocialLogo
             imgURL={mailImg}
             alternate="mail"
-            redirectURL="mailto:sureshmurali29@gmail.com"
-          />
-          <SocialLogo
-            imgURL={instaImg}
-            alternate="insta"
-            redirectURL="https://www.instagram.com/sureshmurali_/"
-          />
-          <SocialLogo
-            imgURL={dribbbleImg}
-            alternate="dribbble"
-            redirectURL="https://dribbble.com/sureshmurali29"
+            redirectURL="mailto:claudioribeiro.j@hotmail.com"
           />
           <SocialLogo
             imgURL={linkedInImg}
             alternate="linkedin"
-            redirectURL="https://www.linkedin.com/in/sureshmurali29"
+            redirectURL="https://www.linkedin.com/in/cl%C3%A1udio-ribeiro-0000a8225/"
           />
         </SocialMediaIcons>
       </Container>

@@ -1,21 +1,21 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import device from '../../../Assets/Responsive/breakpoints';
+import React, { Component } from "react";
+import styled from "styled-components";
+import device from "../../../Assets/Responsive/breakpoints";
 
 const Container = styled.section`
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    height:50vh;
-    width:100%;
-    background-color: white;
-    /* border: 1px solid blue; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background-color: white;
+  /* border: 1px solid blue; */
 `;
 
 const Name = styled.div`
-  font-family: 'Valencia';
-  text-align:center;
+  font-family: "Valencia";
+  text-align: center;
   padding-right: 10px;
   @media ${device.mobileS} {
     font-size: 70px;
@@ -35,8 +35,8 @@ const Name = styled.div`
 `;
 
 const Title = styled.div`
-  font-family: 'AvenirRoman';
-  text-align:center;
+  font-family: "AvenirRoman";
+  text-align: center;
   margin-top: 10px;
   @media ${device.mobileS} {
     font-size: 13px;

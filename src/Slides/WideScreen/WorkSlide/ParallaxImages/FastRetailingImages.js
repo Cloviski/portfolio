@@ -6,6 +6,9 @@ import fastRetailingGUImg from "../../../../Assets/Images/FastRetailing/GU.png";
 import fastRetailingPLSTImg from "../../../../Assets/Images/FastRetailing/PLST.png";
 import fastRetailingGU2Img from "../../../../Assets/Images/FastRetailing/GU2.png";
 import SpaceArtSAHImg from "../../../../Assets/Images/SpaceArt/SAH.png";
+import SpaceArtSAFImg from "../../../../Assets/Images/SpaceArt/SAF.png";
+import SpaceArtSASImg from "../../../../Assets/Images/SpaceArt/SAS.png";
+import SpaceArtSASIImg from "../../../../Assets/Images/SpaceArt/SASI.png";
 
 const FastRetailingPhoneUQ = styled.img.attrs({
   style: ({ scroll }) => ({
@@ -73,17 +76,17 @@ class FastRetailingImages extends Component {
     return (
       <React.Fragment>
         <FastRetailingPhonePLST
-          src={fastRetailingPLSTImg}
+          src={SpaceArtSASIImg}
           scroll={scrollPercent}
           alt="fastRetailingPLST"
         />
         <FastRetailingPhoneGU2
-          src={fastRetailingGU2Img}
+          src={SpaceArtSASImg}
           scroll={scrollPercent}
           alt="fastRetailingGU2"
-        />
+          />
         <FastRetailingPhoneUQ
-          src={fastRetailingUQImg}
+          src={SpaceArtSAFImg}
           scroll={scrollPercent}
           alt="fastRetailingUQ"
         />

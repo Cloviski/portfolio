@@ -1,34 +1,34 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import device from '../../Assets/Responsive/breakpoints';
+import React, { Component } from "react";
+import styled from "styled-components";
+import device from "../../Assets/Responsive/breakpoints";
 
 const Container = styled.section`
-    height: 100vh;
-    width:100%;
-    /* border: 1px solid blue; */
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: flex-start;
-    @media ${device.mobileS} {
-    padding-left:60px;
-    }
-    @media ${device.mobileM} {
-    padding-left:60px;
-    }
-    @media ${device.mobileL} {
-    padding-left:60px;
-    }
-    @media ${device.tablet} {
-    padding-left:90px;
-    }
-    @media ${device.laptop} {
-    padding-left:120px;
-    }
+  height: 100vh;
+  width: 100%;
+  /* border: 1px solid blue; */
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: flex-start;
+  @media ${device.mobileS} {
+    padding-left: 60px;
+  }
+  @media ${device.mobileM} {
+    padding-left: 60px;
+  }
+  @media ${device.mobileL} {
+    padding-left: 60px;
+  }
+  @media ${device.tablet} {
+    padding-left: 90px;
+  }
+  @media ${device.laptop} {
+    padding-left: 120px;
+  }
 `;
 
 const SkillsTitle = styled.div`
-  font-family: 'AvenirHeavy';
+  font-family: "AvenirHeavy";
   color: #000;
   @media ${device.mobileS} {
     font-size: 40px;
@@ -48,9 +48,9 @@ const SkillsTitle = styled.div`
 `;
 
 const SkillsList = styled.div`
-  font-family: 'AvenirRoman';
+  font-family: "AvenirRoman";
   z-index: 1;
-  
+
   @media ${device.mobileS} {
     margin-top: 30px;
     font-size: 20px;
@@ -79,35 +79,26 @@ class Skills extends Component {
       <Container>
         <SkillsTitle>SKILLS</SkillsTitle>
         <SkillsList>
-          <div>
-            Product Design
-            <br />
-            Design system
-            <br />
-            Information architect
-            <br />
-            <br />
-            HTML & CSS
+        <div>
             <br />
             React
             <br />
-            Node JS
+            JavaScript
+            <br />
+            TypeScript
+            <br />
+            NodeJS
             <br />
           </div>
-          <br />
           <div>
-            Project Management
             <br />
-            Visual Communication
+            HTML & CSS
             <br />
-            Concept development
+            npm
             <br />
+            styled-components
             <br />
-            Figma
-            <br />
-            Sketch
-            <br />
-            Principle
+            Git
             <br />
           </div>
         </SkillsList>
