@@ -71,22 +71,26 @@ class ImageContent extends Component {
     return (
       <ImageContainer>
         <ImageBox height={boxHeight}>
-          <FastRetailingImages
-            boxHeight={boxHeight}
-            index={1}
-            scrollPercent={scrollPercent}
-            screenHeight={screenHeight}
-            scrollHeight={scrollHeight}
-          />
+          <a href={"https://spaceart-lemon.vercel.app/"} target="_blank">
+            <FastRetailingImages
+              boxHeight={boxHeight}
+              index={1}
+              scrollPercent={scrollPercent}
+              screenHeight={screenHeight}
+              scrollHeight={scrollHeight}
+            />
+          </a>
         </ImageBox>
         <ImageBox>
-          <EyepImages
-            boxHeight={boxHeight}
-            index={2}
-            scrollPercent={scrollPercent}
-            screenHeight={screenHeight}
-            scrollHeight={scrollHeight}
-          />
+          <a href={"https://youtube-replica-green.vercel.app/"} target="_blank">
+            <EyepImages
+              boxHeight={boxHeight}
+              index={2}
+              scrollPercent={scrollPercent}
+              screenHeight={screenHeight}
+              scrollHeight={scrollHeight}
+            />
+          </a>
         </ImageBox>
       </ImageContainer>
     );
