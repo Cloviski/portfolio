@@ -3,6 +3,7 @@ import styled from "styled-components";
 import githubImg from "../../../Assets/Images/Social/git.svg";
 import mailImg from "../../../Assets/Images/Social/mail.svg";
 import linkedInImg from "../../../Assets/Images/Social/linkedin.svg";
+import resumeImg from "../../../Assets/Images/Resume/resume.svg";
 import SocialLogo from "./SocialLogo";
 import device from "../../../Assets/Responsive/breakpoints";
 
