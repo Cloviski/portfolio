@@ -19,10 +19,10 @@ const Container = styled.section`
 
 const ContactTitle = styled.div.attrs({
   style: ({ scrollPercent }) => ({
-    transform: `translateX(${scrollPercent * 8}%)`,
+    transform: `translateX(${scrollPercent * 8}%)`, //8 //200
   }),
 })`
-  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out; //0.5s
   font-family: "AvenirHeavy";
   font-size: 200px;
   position: absolute;
@@ -83,6 +83,21 @@ class Contact extends Component {
       (sd / (documentElement.scrollHeight - documentElement.clientHeight)) *
       100;
     const minlimit =
+      (documentElement.clientHeight * 540) / documentElement.scrollHeight;
+    if (sp >= minlimit && sp <= 100) {
+      sp -= minlimit;
+      this.setState({ scrollPercent: sp });
+    }
+  }
+  
+/*
+  handleScroll(event) {
+    const { body, documentElement } = event.srcElement;
+    const sd = Math.max(body.scrollTop, documentElement.scrollTop);
+    let sp =
+      (sd / (documentElement.scrollHeight - documentElement.clientHeight)) *
+      100;
+    const minlimit =
       (documentElement.clientHeight * 1040) / documentElement.scrollHeight;
     if (sp >= minlimit && sp <= 100) {
       sp -= minlimit;
@@ -90,6 +105,7 @@ class Contact extends Component {
     }
   }
 
+*/
   render() {
     const { scrollPercent } = this.state;
     return (

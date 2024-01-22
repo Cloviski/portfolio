@@ -12,7 +12,7 @@ const Container = styled.div`
 
 const SkillsTitle = styled.div.attrs({
   style: ({ scrollPercent }) => ({
-    transform: `translateX(-${scrollPercent * 10}%)`,
+    transform: `translateX(-${scrollPercent * 10}%)`, //10
   }),
 })`
   transition: transform 0.5s ease-out;
@@ -87,7 +87,7 @@ class Skills extends Component {
       (sd / (documentElement.scrollHeight - documentElement.clientHeight)) *
       100;
     const minlimit =
-      (documentElement.clientHeight * 950) / documentElement.scrollHeight;
+      (documentElement.clientHeight * 450) / documentElement.scrollHeight;
     const maxlimit =
       (documentElement.clientHeight * 1180) / documentElement.scrollHeight;
     if (sp >= minlimit && sp <= maxlimit + 3) {

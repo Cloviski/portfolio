@@ -12,7 +12,7 @@ const ImageContainer = styled.div`
   /** border: 10px dashed black; */
   margin-left: 50%;
   width: 50%;
-  height: 925vh;
+  height: 375vh; //925vh, ideal is 375vh // 710vh
   display: flex;
   flex-flow: column nowrap;
 `;
