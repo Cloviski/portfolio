@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import resumeDownload from "../../../Assets/Cláudio_Ribeiro_Resume.pdf"
+import resumeImg from "../../../Assets/Images/Resume/resume.svg";
 import twitterImg from "../../../Assets/Images/Social/twitter.svg";
 import githubImg from "../../../Assets/Images/Social/git.svg";
 import mailImg from "../../../Assets/Images/Social/mail.svg";
@@ -89,8 +91,8 @@ class Contact extends Component {
       this.setState({ scrollPercent: sp });
     }
   }
-  
-/*
+
+  /*
   handleScroll(event) {
     const { body, documentElement } = event.srcElement;
     const sd = Math.max(body.scrollTop, documentElement.scrollTop);
@@ -127,6 +129,12 @@ class Contact extends Component {
             alternate="Linkedin"
             redirectURL="https://www.linkedin.com/in/cl%C3%A1udio-ribeiro-0000a8225/"
           />
+          <a href={resumeDownload} target="_blank">
+            <SocialLogo
+              imgURL={resumeImg}
+              alternate="Resume"
+            />
+          </a>
         </SocialMediaIcons>
       </Container>
     );
