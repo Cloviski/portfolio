@@ -117,7 +117,7 @@ class Skills extends Component {
             <br />
             HTML & CSS
             <br />
-            npm
+            Cypress
             <br />
             styled-components
             <br />
