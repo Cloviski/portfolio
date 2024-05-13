@@ -106,22 +106,22 @@ class Skills extends Component {
             <br />
             React
             <br />
-            JavaScript
+            Next.js
             <br />
             TypeScript
             <br />
-            NodeJS
+            JavaScript
             <br />
           </div>
           <div>
             <br />
             HTML & CSS
             <br />
-            Cypress
+            NodeJS
             <br />
             styled-components
             <br />
-            Git
+            Tailwind CSS
             <br />
           </div>
         </SkillsList>

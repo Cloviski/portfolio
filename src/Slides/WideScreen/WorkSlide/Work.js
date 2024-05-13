@@ -30,11 +30,11 @@ class Work extends Component {
       },
       {
         number: "01",
-        projectName: "SPACE ART",
+        projectName: "FLAVIODEFA",
         projectDesc:
-          "Platform designed to revolutionize the way artists and companies connect.",
-        projectType: "React • TypeScript • styled-components",
-        roles: ["Frontend Lead Developer"],
+          "Landing page designed to sell a ebook about entrepreneurship",
+        projectType: "Next.js • TypeScript • Tailwind CSS",
+        roles: ["Frontend Developer"],
       },
       {
         number: "02",
